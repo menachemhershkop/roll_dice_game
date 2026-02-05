@@ -1,0 +1,12 @@
+body{
+    background: #345cbc;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#players{
+    background: lightcoral;
+    opacity: 70%;
+    height: 100%;
+    color: white;
+}

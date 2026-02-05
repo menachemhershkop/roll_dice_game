@@ -1,12 +1,78 @@
 body{
     background: #345cbc;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    display: grid;
+    justify-self: center;
+    align-self: center;
 }
 #players{
     background: lightcoral;
     opacity: 70%;
     height: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+
+}
+#dice{
+    background: green;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+
+}
+.cube1{
+    background: url(/cube/num1.png);
+    height: 70%;
+    width: 50%;
+    background-size: cover;
+
+}
+.cube2{
+    background: url(/cube/num2.png);
+    height: 70%;
+    width: 50%;
+    background-size: cover;
+
+}
+.cube3{
+    background: url(/cube/num3.png);
+    height: 70%;
+    width: 50%;
+    background-size: cover;
+
+}
+.cube4{
+    background: url(/cube/num4.png);
+    height: 70%;
+    width: 50%;
+    background-size: cover;
+
+}
+.cube5{
+    background: url(/cube/num5.png);
+    height: 70%;
+    width: 50%;
+    background-size: cover;
+
+}
+.cube6{
+    background: url(/cube/num6.png);
+    height: 70%;
+    width: 50%;
+    background-size: cover;
+
+}
+
+button{
+    border-radius: 10px;
+    height: 15vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #e8ebf6;
+}
+#new{
+    background: #303d8a;
+}
+#new a{
+    text-decoration: none;
     color: white;
 }

@@ -7,24 +7,30 @@
     <link rel="stylesheet" href="/css/index.css">
     <script src="/js/index.js" defer></script>
 </head>
-<body>
+<body id="body">
     <main>
     <section id="players">
         <header id="player1">
-            <div class="jeneral_score" id="p1_jeneral">0</div>
-            <div class="current_score" id="p1_current">0</div>
+            <h1>Ron</h1>
+            <label for="">jeneral_score
+            <div class="jeneral_score" id="p1_jeneral">0</div></label>
+            <label for="">current_score
+            <div class="current_score" id="p1_current">0</div></label>
         </header>
         <header id="player2">
-            <div class="jeneral_score" id="p2_jeneral">0</div>
-            <div class="current_score" id="p2_current">0</div>
+            <h1>Dani</h1>
+            <label for="">jeneral_score
+            <div class="jeneral_score" id="p2_jeneral">0</div></label>
+            <label for="">current_score
+            <div class="current_score" id="p2_current">0</div></label>
         </header>
     </section>
     <section id="dice">
-        <header class="cube" id="cube1"></header>
-        <header class="cube" id="cube2"></header>
+        <header class="cube" id="dice1"></header>
+        <header class="cube" id="dice2"></header>
     </section>
     <section id="gmae_logic">
-        <button type="reset"><a href="index.html">NEW GAME</a></button>
+        <button type="reset" id="new"><a href="index.html">NEW GAME</a></button>
         <button type="button" id="roll" onclick="rollCube()">ROLL DICE</button>
         <button type="button" id="hold">HOLD</button>
     </section>

@@ -3,6 +3,7 @@ body{
     display: grid;
     justify-self: center;
     align-self: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #players{
     background: lightcoral;
@@ -15,6 +16,8 @@ body{
 }
 #dice{
     background: green;
+    opacity: 60%;
+    padding-top: 15%;
     height: 20vh;
     display: flex;
     justify-content: space-between;
@@ -66,8 +69,6 @@ body{
 button{
     border-radius: 10px;
     height: 15vh;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background: #e8ebf6;
 }
 #new{
     background: #303d8a;

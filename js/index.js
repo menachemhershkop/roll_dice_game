@@ -5,6 +5,7 @@ const cube1 = document.getElementById('dice1');
 const cube2 = document.getElementById('dice2');
 const roll = document.getElementById('roll');
 const hold = document.getElementById('hold');
+const max = document.getElementById('max');
 let allScore;
 let tempScore;
 let count= 0;
@@ -15,7 +16,11 @@ playing = players[Math.floor(Math.random() * players.length)];
 console.log(playing);
 
 
-
+const maxNote = document.createElement('div');
+maxNote.innerText = `The max score are ${maxScore}`
+maxNote.style.background = 'white'
+maxNote.style.opacity = '80%'
+max.appendChild(maxNote);
 
 
 
@@ -23,10 +28,14 @@ function check_players() {
     if(playing === 'Ron'){
         allScore = document.getElementById('p1_jeneral');
         tempScore = document.getElementById('p1_current');
+        p1.style.background = '#3055b4'
+        p2.style.background = 'none'
     }
     else if(playing ==='Dani'){
         allScore = document.getElementById('p2_jeneral');
         tempScore = document.getElementById('p2_current');
+        p2.style.background = '#3055b4'
+        p1.style.background = 'none'
     }
 }
 function rplace(){
@@ -130,8 +139,9 @@ function chekWin(score){
         win.className = 'Winner'
         win.style.position = 'absolute'
         win.style.alignSelf = 'center'
-        win.innerText = playing, 'Win'
+        win.style.fontSize = 'x-large'
         win.style.background = 'yellwo'
+        win.style.paddingTop = '10vh'
         body.appendChild(win)
         roll.disabled = true;
         hold.disabled = true;
